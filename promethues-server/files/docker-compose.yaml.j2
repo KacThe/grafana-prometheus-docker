@@ -1,0 +1,7 @@
+services:
+  prometheus:
+    image: prom/prometheus:v3.5.0
+    container_name: prometheus-server
+    ports:
+      - "9090:9090"
+    restart: unless-stopped

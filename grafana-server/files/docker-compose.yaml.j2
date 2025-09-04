@@ -1,0 +1,7 @@
+services:
+  grafana:
+    image: grafana/grafana:12.2.0-17449462949-ubuntu
+    container_name: grafana-server
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
